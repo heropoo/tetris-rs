@@ -1,6 +1,6 @@
 # tetris-rs
 
-[![Build Status](https://travis-ci.org/heropoo/tetris-rs.svg?branch=master)](https://travis-ci.org/heropoo/tetris-rs)
+[![Build](https://github.com/heropoo/tetris-rs/actions/workflows/build.yml/badge.svg)](https://github.com/heropoo/tetris-rs/actions/workflows/build.yml)
 
 Game Tetris in Rust Language.
 
