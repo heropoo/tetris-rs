@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Dependencies
-      run: sudo apt-get install libglfw3 libglfw3-dev libglew-dev libwayland-dev libxkbcommon-dev wayland-protocols extra-cmake-modules
+      run: sudo apt-get install libglfw3 libglfw3-dev libglew-dev libxinerama
     - name: Build
       run: cargo build --verbose
     - name: Run tests
