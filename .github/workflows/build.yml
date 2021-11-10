@@ -12,12 +12,12 @@ env:
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-lastest
 
     steps:
     - uses: actions/checkout@v2
     - name: Install Dependencies
-      run: sudo apt-get install libglfw3 libglfw3-dev libglew-dev
+      run: sudo apt-get install libglfw3 libglfw3-dev libglew-dev libwayland-dev libxkbcommon-dev wayland-protocols extra-cmake-modules
     - name: Build
       run: cargo build --verbose
     - name: Run tests
