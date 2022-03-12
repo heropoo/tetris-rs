@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, sdl2 ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, sdl2 ]
 
 env:
   CARGO_TERM_COLOR: always
@@ -17,7 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Dependencies
-      run: sudo apt-get install libglfw3 libglfw3-dev xorg-dev
+      #run: sudo apt-get install libglfw3 libglfw3-dev xorg-dev
+      run: sudo apt-get install libsdl2-dev
     - name: Build
       run: cargo build --verbose
     - name: Run tests
