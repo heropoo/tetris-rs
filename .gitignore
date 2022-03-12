@@ -1,2 +1,4 @@
 target/
 *.bk
+SDL2.dll
+sdl2-config
